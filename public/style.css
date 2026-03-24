@@ -27,3 +27,24 @@
 .nav-links.active {
     display: flex;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
