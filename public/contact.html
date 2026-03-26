@@ -5,23 +5,24 @@
         <title>Contact</title>
     </head>
     <body>
-        <!-- <nav>
-            <a href="/">Home</a> |
-            <a href="/about">About</a> |
-            <a href="/contact">Contact</a>
-        </nav> -->
-        <nav class="navbar">
-            <h1>My Website</h1>
-            <div class="hamburger" onclick="toggleMenu()">■</div>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <h1>Contact</h1>
-        <p>This page explains how to contact me.</p>
+        <div class="background">
+            <nav class="navbar">
+                <h1>My Website</h1>
+                <div class="hamburger" onclick="toggleMenu()"><b>Ω</b></div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+        <main class="form-page">
+            <h1>Contact Us</h1>
+            <p>This page explains how to contact me. Fill out the form below and we will get back to you within 24 hours.</p>
+            <!-- form goes here -->
+        </main>
+        <script src="js/formValidation.js"></script>
         <script>
             function toggleMenu() {
                 document.querySelector('.nav-links').classList.toggle('active');
