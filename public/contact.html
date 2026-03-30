@@ -21,21 +21,21 @@
         <main class="form-page">
             <h1>Contact Us</h1>
             <p>This page explains how to contact me. Fill out the form below and we will get back to you within 24 hours.</p>
-            <form id="contactForm" action="#" method="post" novalidate>
+            <form id="contactForm" action="/send" method="POST">
                 <!-- Full Name -->
                 <div class="form-group">
                     <label for="fullName">Full Name <span class="required">*</span></label>
                     <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" autocomplete="name" required>
                     <span class="error-msg" id="fullNameError"></span>
                 </div>
-        
+
                 <!-- Email -->
                 <div class="form-group">
                     <label for="email">Email Address <span class="required">*</span></label>
                     <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required>
                     <span class="error-msg" id="emailError"></span>
                 </div>
-        
+
                 <!-- Phone -->
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
@@ -110,7 +110,7 @@
                     <label for="employees">Number of Employees</label>
                     <input type="number" id="employees" name="employees" min="1" max="10000" placeholder="e.g. 25">
                 </div>
-        
+
                 <!-- A textarea is a multi-line text box. Use it when the user might write a sentence or more. -->
                 <!-- Message -->
                 <div class="form-group">
@@ -128,7 +128,7 @@
                 </div>
             </form> <!-- closing tag -->
         </main>
-        <script src="formValidation.js"></script>
+        <!-- <script src="formValidation.js"></script> -->
         <script>
             function toggleMenu() {
                 document.querySelector('.nav-links').classList.toggle('active');
