@@ -57,6 +57,9 @@ app.get('/contact', (req, res) => {
   res.sendFile(__dirname + '/public/contact.html')
 })
 
+app.get('/cat', (req, res) => {
+  res.sendFile(__dirname + '/public/cat.html')
+})
 
 
 app.listen(PORT, () => {
