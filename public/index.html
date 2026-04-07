@@ -3,6 +3,10 @@
     <head>
         <link href="style.css" rel="stylesheet">
         <title>Home</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
     </head>
     <body>
         <div class="background">
@@ -20,9 +24,33 @@
         </div>
         <h1>Welcome to My Website</h1>
         <p>This is my homepage.</p>
+
+        <div id="grid"></div>
         <script>
+            let ee = prompt("How many cells do you want to fill? (1-20)", "10");
             function toggleMenu() {
                 document.querySelector('.nav-links').classList.toggle('active');
+            }
+
+            const grid = document.getElementById("grid");
+            const letters = "ABCDEFGHI";
+
+            for (let r = 0; r < 9; r++) {
+            for (let c = 1; c <= 9; c++) {
+                const div = document.createElement("div");
+                div.className = "cell";
+
+                const label = letters[r] + c; // e.g., B2
+                div.id = label;
+                grid.appendChild(div);
+            }
+        }
+            for (let i = 0; i < ee; i++) {
+                let randomLetter = letters[Math.floor(Math.random() * letters.length)];
+                let randomNumber = Math.floor(Math.random() * 9) + 1;
+                let randomCellId = randomLetter + randomNumber;
+                let randomCell = document.getElementById(randomCellId);
+                randomCell.classList += " ded";
             }
         </script>
     </body>

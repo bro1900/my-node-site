@@ -1,4 +1,4 @@
-let timer = setInterval(yee, 12);
+let timer = setInterval(yee, 20);
 let opaque = 0;
 function yee() {
     let cat = document.getElementById("car");
