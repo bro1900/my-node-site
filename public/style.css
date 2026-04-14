@@ -34,6 +34,11 @@ b {
 
 .background {
     background: #000000;
+}
+
+a img {
+    padding: 1px 0px 0px 0px;
+    margin: 0;
 
 }
 
@@ -130,3 +135,10 @@ nav {
   font-family: monospace;
   border: 1px solid #ccc;
 }
+
+/* .logo {
+    background: url('images/3.png') no-repeat center center;
+} */
+
+/* .logo a {
+} */

@@ -11,7 +11,7 @@
     <body>
         <div class="background">
             <nav class="navbar">
-                <h1>My Website</h1>
+                <div class="logo"><a href="/"><img src="images/4.png" alt="they're carriers of disease, and they eat garbage"></a></div>
                 <div class="hamburger" onclick="toggleMenu()"><b>Ω</b></div>
                 <ul class="nav-links">
                     <li><a href="/cat" id="catUndiscovered">???</a></li>
@@ -27,7 +27,7 @@
 
         <div id="grid"></div>
         <script>
-            let ee = prompt("How many cells do you want to fill? (1-20)", "10");
+            let ee = 10;//prompt("How many cells do you want to fill? (1-20)", "10");
             function toggleMenu() {
                 document.querySelector('.nav-links').classList.toggle('active');
             }
