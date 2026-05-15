@@ -14,7 +14,8 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1",
-    "nodemailer": "^8.0.4"
+    "nodemailer": "^8.0.4",
+    "tippy.js": "^6.3.7"
   },
   "devDependencies": {
     "@ljharb/tsconfig": "^0.3.2",

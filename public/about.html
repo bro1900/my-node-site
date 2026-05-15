@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/font.css" rel="stylesheet">
+        <link href="css/sweep.css" rel="stylesheet">
         <title>About</title>
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="images/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/arial" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/sans-comic-sans" rel="stylesheet">
     </head>
     <body>
+        <audio loop id="sound4">
+            <source src="images/curtis.mp3" type="audio/mpeg">
+            cannot play D:
+        </audio>
         <div class="background">
             <nav class="navbar">
                 <div class="logo"><a href="/"><img src="images/4.png" alt="they're carriers of disease, and they eat garbage"></a></div>
                 <div class="hamburger" onclick="toggleMenu()"><b>Ω</b></div>
                 <ul class="nav-links">
+                    <li><button onclick="document.getElementById('sound4').play()"><i class="fa-solid fa-file-audio"></i></button></li>
                     <li><a href="/cat" id="catUndiscovered">???</a></li>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
@@ -24,31 +35,10 @@
         </div>
         <h1 id="AHH">About Me</h1>
         <p>This page tells visitors about me.</p>
+        <script href="javascript/yell.js"></script>
+        <script href="javascript/sweep.js"></script>
+        <script src="javascript/mow.js"></script>
         <script>
-            let timer = setInterval(yell, 30);
-            let ah = "A";
-            let red = 0;
-            function yell() {
-                yelp = ah + "bout Me";
-                color = "rgb(" + red + ", 0, 0)";
-                document.getElementById("AHH").innerText = yelp;
-                document.getElementById("AHH").style.color = color;
-                ah += "A";
-                red += 17;
-                console.log("e")
-                if(red == 374){
-                    clearInterval(timer);
-                    document.getElementById("AHH").innerText = "About Me";
-                    document.getElementById("AHH").style.color = "rgb(0,0,0)";
-                }
-            };
-
-
-
-            function toggleMenu() {
-                document.querySelector('.nav-links').classList.toggle('active');
-            }
-
             function toggleMenu() {
                 document.querySelector('.nav-links').classList.toggle('active');
             }

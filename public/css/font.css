@@ -1,0 +1,58 @@
+:root {
+    --times: 'Times New Roman', sans-serif;
+    --comic: 'Sans Comic Sans', sans-serif;
+    --arial: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--times);
+}
+
+#font{
+    font-family: var(--comic) !important;
+}
+
+.font {
+    font-family: var(--comic) !important;
+}
+
+/*  */
+
+@keyframes gradualKF {
+    from {
+        transform: scale(1,1);
+    }
+    to {
+        transform: scale(1.1,1.1);
+    }
+}
+
+.logo:hover {
+    animation: gradualKF 500ms ease-in both;
+}
+
+/*  */
+
+#car * {
+    transform: scale(1);
+    border-radius: 1px;
+    transition: transform 75ms ease, border-radius 75ms ease;
+}
+
+#car *:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/*  */
+
+/* sets text to arial */
+p, input, option, select, textarea, .checkbox-group, .radio-group, .hint {
+    font-family: var(--arial);
+}
+
+/* shrinks overgrown text for contact.html */
+label, input, option, select, textarea, .checkbox-group, .radio-group, .hint {
+    margin: 0;
+}

@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/font.css" rel="stylesheet">
         <title>Mow</title>
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="images/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/arial" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/sans-comic-sans" rel="stylesheet">
     </head>
-    <body>
-            <div class="background">
-                <nav class="navbar">
-                <div class="logo"><a href="/"><img src="images/4.png" alt="they're carriers of disease, and they eat garbage"></a></div>
-                    <div class="hamburger" onclick="toggleMenu()"><b>Ω</b></div>
-                    <ul class="nav-links">
-                        <li><a href="/cat">:3</a></li>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <hr>
-            </div>
+    <body id="font">
+        <audio autoplay loop id="sound">
+            <source src="images/dogsong.mp3" type="audio/mpeg">
+            sux 2 b u
+        </audio>
+        <div class="background">
+            <nav class="navbar font">
+            <div class="logo"><a href="/"><img src="images/4.png" alt="they're carriers of disease, and they eat garbage"></a></div>
+                <div class="hamburger" onclick="toggleMenu()"><b>Ω</b></div>
+                <ul class="nav-links">
+                    <li><button onclick="document.getElementById('sound').play()"><i class="fa-solid fa-file-audio"></i></button></li>
+                    <li><a href="/cat">:3</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
         <div id="car">
-            <h1>About Me</h1>
-            <p>This page tells visitors about me.</p>
-            <div><img src="https://media.tenor.com/AN83u7YyqwUAAAAM/maxwell-the-cat.gif"></div>
-            <div><img src="https://i.pinimg.com/originals/36/80/48/3680488ab71368a1fea7a7fc2bbbd8f5.gif"></div>
-            <div><img src="https://media.tenor.com/yiY8YvQTDM8AAAAM/cat-maxwell.gif"></div>
-            <div><img src="https://media.tenor.com/l5Mk7brosi0AAAAe/cat-kitty.png"></div>
-            <div><img src="https://media.tenor.com/E3_AyzFnuXYAAAAM/but-heres.gif"></div>
-            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ5fGJfv5VOijiV_JHdwpNDtZ-pR293PQz0acTkjiqgQ&s"></div>
-            <div><img src="https://i.redd.it/81ukbvu8o5vd1.jpeg"></div>
-            <div><img src="https://media.tenor.com/uFb8sQFRNvQAAAAM/plink-cat.gif"></div>
-            <div><img src="https://media.tenor.com/OwYe2WdJEYsAAAAM/cat-fight.gif"></div>
-            <div><img src="https://media.tenor.com/bav3SyHRcpYAAAAe/erm-what-the-meow.png"></div>
-            <div><img src="https://media.tenor.com/6IVtYlZS0soAAAAM/dog-flower-field.gif"></div>
-            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK5bx4QLYtqy9OM2A-lq4m5PIkDVzl8PSQXg&s"></div>
-            <div><img src="https://raw.githubusercontent.com/gist/dumbmoron/ea9b6264e6b6183fd590e322d1afab51/raw/bc064a9116403eab89e5b8200b1aa0890419ec0e/cat.gif"></div>
+            <h1>hOh Yayeuh</h1>
+            <p class="bar">Ipsum delorum</p>
+            <!-- <div><img src="images/catspin.gif"></div>
+            <div><img src="images/catmaxwell.gif"></div>
+            <div><img src="images/catmaxspin.gif"></div>
+            <div><img src="images/catsquare.png"></div>
+            <div><img src="images/catshocker.gif"></div>
+            <div><img src="images/catuhhuh.jpg"></div>
+            <div><img src="images/catstare.jpeg"></div>
+            <div><img src="images/catplinK.gif"></div>
+            <div><img src="images/catserious.gif"></div>
+            <div><img src="images/caterm.png"></div>
+            <div><img src="images/catdog.gif"></div>
+            <div><img src="images/catblehfog.jpg"></div>
+            <div><img src="images/catsideeye.gif"></div>
             <div><img src="images/catfish.gif"></div>
-            <div><img src="images/carfat.gif"></div>
+            <div><img src="images/catfat.gif"></div>
             <div><img src="images/catcheez.gif"></div>
             <div><img src="images/categg.gif"></div>
             <div><img src="images/catlook.webp"></div>
             <div><img src="images/catprof.gif"></div>
             <div><img src="images/catwave.gif"></div>
             <div><img src="images/catyes.gif"></div>
-            <div><img src="images/thevoices.gif"></div>
+            <div><img src="images/catthevoices.gif"></div>
             <div><img src="images/catcam.gif"></div>
             <div><img src="images/cathuh.gif"></div>
             <div><img src="images/catuhm.gif"></div>
-            <div><img src="images/catdance.gif"></div>
+            <div><img src="images/catdance.gif"></div> -->
         </div>
-        <script src="car.js"></script>
+        <script src="javascript/gifs.js"></script>
+        <script src="javascript/car.js"></script>
         <script>
-            function toggleMenu() {
-                document.querySelector('.nav-links').classList.toggle('active');
-            }
-
             function toggleMenu() {
                 document.querySelector('.nav-links').classList.toggle('active');
             }
